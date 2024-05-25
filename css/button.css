@@ -1,0 +1,67 @@
+/* Button Bar */
+button-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Export Enquiry and Domestic Enquiry Buttons */
+.export-enquiry,
+.domestic-enquiry {
+    background-color: #0073b7;
+    color: white;
+}
+
+/* US-Canada Enquiry, Catalogue, Call Now, and WhatsApp Now Buttons */
+.us-canada-enquiry,
+.catalogue,
+.call-now,
+.whatsapp-now {
+    background-color: #000;
+    color: white;
+}
+
+/* Catalogue, Call Now, and WhatsApp Now Buttons */
+.catalogue,
+.call-now,
+.whatsapp-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Catalogue, Call Now, and WhatsApp Now Button Spans */
+.catalogue span,
+.call-now span,
+.whatsapp-now span {
+    margin-right: 8px;
+}
+
+/* WhatsApp Now Button */
+.whatsapp-now {
+    border: 2px solid #000;
+    color: #25D366;
+    background-color: transparent;
+}
+
+/* WhatsApp Now Button Span */
+.whatsapp-now span {
+    font-size: 18px;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Jassico"
+        content="A place where you can buy all yours Tools and Equipments for your company use which have beter quality.">
+     
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/vbtn.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./script.js" />
+    <link rel="stylesheet" href="./script/home.js" />
+    <link rel="icon" type="image/png" href="images/logo.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Jassico</title>
+    </head>
+
+    <body>
+        <!-- page loading animation -->
+        <div id="page-loader" class="page-loader">
+            <div class="loader-img">
+                <img src="./images/bolt-and-nut.svg" alt="loading...." />
+            </div>
+        </div>
+
+        </div>
+        <!-- Navigation section -->
+        <nav>
+            <div class="navbar">
+                <!-- company logo -->
+                <a href="#hero" class="logo-image "><img class="logo aimg" width="50px" height="50px"
+                        src="./images/logo.png" alt="logo" /></a>
+                <ul class="nav-link">
+                    <li class="navigation-link">
+                        <a href="#hero" class="home-link atag" onclick="scrollToTarget(home)">Home</a>
+                    </li>
+                    <li class="navigation-link">
+                        <a href="#product" class="products-link atag" onclick="scrollToTarget(product)">Products</a>
+                    </li>
+                    <li class="navigation-link">
+                        <a href="#about" class="about-link atag" onclick="scrollToTarget(about)">About Us</a>
+                    </li>
+                    <li class="navigation-link">
+                        <a href="#contact" class="contatc-link atag" ">Contact</a>
+                </li>
+                <li class=" navigation-link cart">
+                            <a href="#" class="contatc-link atag"><img src="./images/cart.png" width="50px"
+                                    height="50px" alt="" />
+                            </a>
+                    </li>
+
+                    <li class="navigation-link cart">
+                        <a href="#" class="contatc-link atag"><img src="./images/user-circle.svg" width="50px"
+                                height="50px" alt="" /></a>
+                    </li>
+                </ul>
+
+                <div class="profile">
+                    <li class="navigation-link cart">
+                        <a href="#" class="contatc-link atag"><img src="./images/user-circle.svg" width="50px"
+                                height="50px" alt="" /></a>
+                    </li>
+                </div>
+
+
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <div class="line l1"></div>
+                    <div class="line l2"></div>
+                    <div class="line l3"></div>
+                </div>
+                <!-- Hamburger navbar -->
+            </div>
+            <div class="dropdown">
+                <div class="d-m overlay">
+                    <a href="#hero" class="logo-image drop" style><img class="logo" width="50px" height="50px"
+                            src="./images/logo.png" alt="logo" /></a>
+                    <ul class="navbar-d">
+                        <li class="navigation-link-d">
+                            <a href="#hero" class="home-link-d atag">Home</a>
+                        </li>
+                        <li class="navigation-link-d">
+                            <a href="#product" class="school-link-d atag">Product</a>
+                        </li>
+                        <li class="navigation-link-d">
+                            <a href="#about" class="preUni-link-d atag">About Us</a>
+                        </li>
+                        <li class="navigation-link-d">
+                            <a href="#contact" class="about-link-d atag">Contact</a>
+                        </li>
+                        <li class="navigation-link cart">
+                            <a href="#" class="contatc-link atag"><img src="./images/cart.png" width="50px"
+                                    height="50px" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- home section -->
+        <div class="home-section" id="hero">
+            <!-- Heading for home page -->
+            <div class="main-heading">
+                <h1 class="home-content">OUR FEATURED PRODUCTS</h1>
+            </div>
+
+            <div class="home-product">
+                <!-- Arrow button -->
+                <div class="arrow-button">
+                    <!-- Left arrow -->
+                    <div class="left_button" onclick="prevDiv()"><i class="fa-solid fa-angles-left"></i></div>
+                    <!-- right arrow -->
+                    <div class="right_button" onclick="nextDiv()">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                </div>
+                <div class="mainContent">
+                    <div class="content1">
+                        <div class="prd_left">
+                            <div class="prd_head_wrap">
+                                <h1 class="prod_hed">Hacksaw frame</h1>
+                            </div>
+                            <div class="prd_info_div">
+                                <p class="prd_info">A metal frame with a handle and blade holder, used for supporting
+                                    and
+                                    tensioning hacksaw blades, enabling controlled cutting of various materials such as
+                                    metal, plastic, or wood in fabrication, construction, automotive repair, and DIY
+                                    projects."</p>
+                            </div>
+                            <div class="act_btn">
+                                <div class="cart_btn">
+                                    <button class="cart_btn"><img width="30px" src="./images/add_to_cart.png"
+                                            alt=""></button>
+                                </div>
+                                <div class="enq_btn">
+                                    <button class="end_c">
+                                        <div class="enq">Enquire</div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="prd_right">
+                            <div class="img-sec imgs">
+                                <img class="image" src="./images/pliers.jpeg" alt="" id="img-sec " width="200px"
+                                    height="50px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content1">
+                        <div class="prd_left">
+                            <div class="prd_head_wrap">
+                                <h1 class="prod_hed">Hacksaw blade</h1>
+                                <img src="" alt="">
+                            </div>
+                            <div class="prd_info_div">
+                                <p class="prd_info">A long, narrow blade with serrated teeth along one edge, designed
+                                    for
+                                    cutting metal, plastic, or other materials, compatible with hacksaw frames for
+                                    precise
+                                    and efficient cutting in fabrication, construction, automotive repair, and DIY
+                                    projects.
+                                </p>
+                            </div>
+                            <div class="act_btn">
+                                <div class="cart_btn">
+                                    <button class="cart_btn"><img width="30px" src="./images/add_to_cart.png"
+                                            alt=""></button>
+                                </div>
+                                <div class="enq_btn">
+                                    <button class="end_c">
+                                        <div class="enq">Enquire</div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="prd_right">
+                            <div class="img-sec">
+                                <img class="image" src="./images/prd/1.jpeg" alt="" id="img-sec" width="200px"
+                                    height="50px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content1">
+                        <div class="prd_left">
+                            <div class="prd_head_wrap">
+                                <h1 class="prod_hed">Chiesel</h1>
+                            </div>
+                            <div class="prd_info_div">
+                                <p class="prd_info">A sharp-edged hand tool used for cutting, shaping, or carving hard
+                                    materials such as wood, stone, or metal, featuring a blade at one end and a handle
+                                    for
+                                    precision and control, essential in woodworking, masonry, and sculpture.</p>
+                            </div>
+                            <div class="act_btn">
+                                <div class="cart_btn">
+                                    <button class="cart_btn"><img width="30px" src="./images/add_to_cart.png"
+                                            alt=""></button>
+                                </div>
+                                <div class="enq_btn">
+                                    <button class="end_c">
+                                        <div class="enq">Enquire</div>
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="prd_right">
+                            <div class="img-sec">
+                                <img class="image" src="./images/prd/1.jpeg" alt="" id="img-sec" width="200px"
+                                    height="50px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Arrow button -->
+                <div class="arrow-button">
+                    <!-- Left arrow -->
+                    <div class="left_button" onclick="prevDiv()"><i class="fa-solid fa-angles-left"></i></div>
+                    <!-- right arrow -->
+                    <div class="right_button" onclick="nextDiv()">
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Home page ends here -->
+        <div class="enquiry_btn_container">
+            <div class="main-container">
+                <div class="btn1 expenq "><a href="">Export Enquiry</a></div>
+                <div class="btn1 ubtn"><a href="">US/CANADA Enquiry</a></div>
+                <div class="btn1 denq"><a href="">Domestic Enquiry</a></div>
+                <div class="btn1 catl">
+                    <a href="">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Catalogue</span>
+                    </a>
+                </div>
+                <div class="btn1 call"><a href=""><i class="fa-solid fa-phone"></i><span>Call now</span></a></div>
+                <div class="btn1 wtsp"><a href=""><i class="fa-brands wtsp fa-square-whatsapp"></i><span
+                            class="wt">WhatsApp
+                            Now</span></a></div>
+
+            </div>
+
+        </div>
+
+        <!-- product section -->
+        <section id="product">
+            <div class="container">
+                <h1>Our Products</h1>
+                <div class="products-grid">
+                    <div class="products-grid">
+                        <div class="product-item">
+                            <img width="100px" src="./images/prd/1.jpeg" alt="Hacksaw Blades">
+                            <p>HACKSAW BLADES</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">HACKSAW BLADES</h2>
+                                <p>Versatile cutting tools for metalwork.</p>
+                                <button>Enquire</button>
+
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img width="100px" src="./images/prd/2.jpeg" alt="Chisels Pointed & Flat">
+                            <p>CHISELS POINTED & FLAT</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">CHISELS POINTED & FLAT</h2>
+                                <p>Essential for woodworking, carving details and shaping surfaces.</p>
+                                <button>Enquire</button>
+
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/3.jpeg" alt="Hacksaw Frame PVC Handle">
+                            <p>HACKSAW FRAME PVC HANDLE</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">HACKSAW FRAME PVC HANDLE</h2>
+                                <p>Stable frame for smooth cutting through metal.</p>
+                                <button>Enquire</button>
+
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/4.jpeg" alt="Hacksaw Frame Mini Poland">
+                            <p>HACKSAW FRAME MINI POLAND</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">HACKSAW FRAME MINI POLAND</h2>
+                                <p>Compact frame for precise cuts in tight spaces.</p>
+                                <button>Enquire</button>
+
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/5.jpeg" alt="Hacksaw Frame Jolly Type">
+                            <p>HACKSAW FRAME JOLLY TYPE</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">HACKSAW FRAME JOLLY TYPE</h2>
+                                <p>Stable platform for controlled cutting of various materials.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/6.jpeg" alt="Junior Hacksaw">
+                            <p>JUNIOR HACKSAW</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">JUNIOR HACKSAW</h2>
+                                <p>Versatile for precision cutting in tight spaces.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/7.jpeg" alt="Frame">
+                            <p>FRAME</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">FRAME</h2>
+                                <p>Provides structural support and stability in various applications.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/7.jpeg" alt="Cobbler Pincer">
+                            <p>COBBLER PINCER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">COBBLER PINCER</h2>
+                                <p>Grips, pinches, and bends leather for footwear crafting.</p>
+                                <button>Enquire</button>
+
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/9.jpeg" alt="Hand Drill">
+                            <p>HAND DRILL</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">HACKSAW FRAME MINI POLAND</h2>
+                                <p>Manual drilling tool for woodworking and metalworking.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/10.jpeg" alt="Rotatory Barrel Pump">
+                            <p>ROTATORY BARREL PUMP</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">ROTATORY BARREL PUMP</h2>
+                                <p>Efficiently transfers fluids from barrels or containers.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/11.jpeg" alt="Malleable C Clamp">
+                            <p>MALLEABLE C CLAMP</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">MALLEABLE C CLAMP</h2>
+                                <p>Provides secure yet versatile clamping solutions.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/12.jpeg" alt="Try Square">
+                            <p>TRY SQUARE</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">TRY SQUARE</h2>
+                                <p>Measures angles and ensures accuracy in woodworking and metalworking.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/13.jpeg" alt="Striking Screw Driver">
+                            <p>STRIKING SCREW DRIVER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">STRIKING SCREW DRIVER</h2>
+                                <p>Combines screwdriving and striking functions.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/14.jpeg" alt="Screw Drivers">
+                            <p>SCREW DRIVERS</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">SCREW DRIVERS</h2>
+                                <p>Essential for driving and removing screws of various sizes and types.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/15.jpeg" alt="Line Tester">
+                            <p>LINE TESTER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">LINE TESTER</h2>
+                                <p>Checks presence of electrical current in wires or circuits.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/16.jpeg" alt="Screw Driver Kits">
+                            <p>SCREW DRIVER KITS</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">SCREW DRIVER KITS</h2>
+                                <p>Contain multiple screwdrivers for versatile use.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/17.jpeg" alt="Silicon Hammer">
+                            <p>SILICON HAMMER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">SILICON HAMMER</h2>
+                                <p>Delivers non-marring blows for delicate materials.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/18.jpeg" alt="Sledge Hammer">
+                            <p>SLEDGE HAMMER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">SLEDGE HAMMER</h2>
+                                <p>Heavy-duty hammer for powerful impact in demolition.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <img src="./images/prd/19.jpeg" alt="Ball & Cross Pein Hammer">
+                            <p>BALL & CROSS PEIN HAMMER</p>
+                            <div class="overlay">
+                                <h2 class="ov-h">BALL & CROSS PEIN HAMMER</h2>
+                                <p>Versatile hammers for shaping metal and driving punches.</p>
+                                <button>Enquire</button>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <!-- about section -->
+        <section id="about" class="about-company">
+            <h2>About Company</h2>
+            <div class="content">
+                <div class="text">
+                    <p><strong>Sukhleen International</strong> based in Ludhiana, Punjab, India, is a manufacturer and
+                        trader of a wide range of hand tools, power tools, tractor parts, gardening tools, and other
+                        cutting
+                        tools. The company’s Quality Management System has been assessed and certified to meet the ISO
+                        9001:2015 standard, ensuring adherence to rigorous quality standards in its operations. Sukhleen
+                        International's commitment to quality is further demonstrated through its successful completion
+                        of
+                        surveillance audits, ensuring continuous compliance with certification requirements. Accredited
+                        by
+                        EGAC and endorsed by SRK System and Services Pvt. Ltd, an ISO certification body, the company
+                        upholds international standards of excellence in its products and services. Sukhleen
+                        International
+                        exemplifies a dedication to quality, integrity, and customer satisfaction in its industry.</p>
+                </div>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zfAfKh7v354?si=eAdswYVkRq4NgnIt"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="contact-info">
+
+                <div class="headd ">
+                    <h2>Get in Touch</h2>
+                </div>
+
+                <div class="mobile ct">
+                    <p><a href="tel:+91 9592001900"><i class="fa-solid fa-phone ic"></i> +91 9592001900</a></p>
+                </div>
+
+                <div class="email ct">
+                    <p><a href="mailto:contact@sukhleen.com"><i
+                                class="fa-regular fa-envelope ic"></i>contact@sukhleen.com</a></p>
+                </div>
+
+                <div class="location ct">
+                    <p><a
+                            href="https://www.google.com/maps/place/Ludhiana,+Punjab+141003/@30.87549,75.865377,13z/data=!4m6!3m5!1s0x391a82593ee5e055:0x214211cba65aa5f3!8m2!3d30.8721582!4d75.8359645!16s%2Fg%2F1yl47plqr?hl=en&entry=ttu"><i
+                                class="fa-solid fa-location ic"></i> Ludhiana, Punjab, India</a></p>
+                </div>
+
+            </div>
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="a5cbc555-ca9a-4000-a665-2733a1116e94">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+                <div id="result"></div>
+
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-section">
+                    <img src="./images/logo.png" alt="Jassico Logo" class="footer-logo">
+                    <h3>Sukhleen International</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section ft">
+                    <h4>Main Menu</h4>
+                    <ul>
+                        <li><a href="#hero" class="fm"><i class="fa-solid fa-arrow-right"></i>Home</a></li>
+                        <li><a href="#about" class="fm"><i class="fa-solid fa-arrow-right"></i>About</a></li>
+                        <li><a href="#product" class="fm"><i class="fa-solid fa-arrow-right"></i>Products</a></li>
+                        <li><a href="" class="fm"><i class="fa-solid fa-arrow-right"></i>Certificates</a></li>
+                        <li><a href="#contact" class="fm"><i class="fa-solid fa-arrow-right"></i>Contact Us</a></li>
+                        <li><a href="#" class="fm"><i class="fa-solid fa-arrow-right"></i>Export Enquire</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section ftt">
+                    <h4>Get in Touch</h4>
+                    <div class="k">
+                        <p><i class="fa-solid fa-phone"></i>+91 9592001900</p>
+                        <p><i class="fa-regular fa-envelope"></i> contact@sukhleen.com</p>
+                        <p><i class="fa-solid fa-location"></i> Ludhiana, Punjab, India</p>
+                    </div>
+
+                </div>
+                <div class="footer-section">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13692.349402077685!2d75.82281891896656!3d30.90834805649671!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a831b7dfd7c49%3A0x413e49d0f2071e6e!2sLudhiana%2C%20Punjab%20141003!5e0!3m2!1sen!2sin!4v1597697759371!5m2!1sen!2sin"
+                        width="300" height="200" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+
+                </div>
+        </footer>
+    </body>
+
+
+    <script src="./script.js"></script>
+    <script src="./script/home.js"></script>
+    <script src="./script/navbar.js"></script>
+    <script src="./script/contact.js"></script>
+
+</html>
+
+
+
+<!-- 
+<div class="arrow">
+    <div class="nav nav-left left">
+        <i class="fa-solid fa-chevron-left" onclick="nextSlide() ,showSlide()"></i>
+    </div>
+    <div class="nav nav-right right">
+        <i class="fa-solid fa-chevron-right " onclick="prevSlide(),showSlide()"></i>
+    </div>
+</div> -->

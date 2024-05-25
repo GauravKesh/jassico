@@ -1,0 +1,126 @@
+/* Footer Styles */
+
+/* Footer container */
+.footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+/* Footer section */
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Footer logo */
+.footer-logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Footer section heading */
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Footer section unordered list */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Footer section list items */
+.footer-section ul li {
+    list-style-type: none;
+    padding: 2px;
+}
+
+/* Footer section list item links */
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Footer section list item link hover */
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    /* font-size: 1px; */
+    cursor: pointer;
+    color: rgb(111, 78, 66);
+}
+
+.fm{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* Footer section paragraphs */
+.footer-section p {
+    margin: 5px 0;
+}
+
+/* Footer section images */
+.footer-section img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Footer social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Footer social icon links */
+.social-icons a {
+    margin: 0 10px;
+}
+
+/* Footer social icon images */
+.social-icons img {
+    width: 30px;
+}
+
+/* Footer additional styles */
+
+/* Footer text */
+.ft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(8px, 7vw, 10px);
+}
+
+/* Footer text with alignment */
+.ftt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: clamp(8px, 7vw, 10px);
+}
+
+/* Footer section unordered list with alignment */
+.ft ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+/* Footer section list items with margin */
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+/* Font Awesome solid icon padding */
+.fa-solid {
+    padding-right: 5px;
+}

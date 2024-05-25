@@ -1,0 +1,156 @@
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: linear-gradient(150deg, #eff7ee, hsl(196, 90%, 31%));
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-info, .contact-form {
+    width: 45%;
+}
+
+
+.contact-info{
+    background-image: linear-gradient(150deg, #eff7ee, hsl(196, 90%, 31%));
+    padding: 40px;
+    margin: 50px 0 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    flex-basis: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ct{
+    background-image: linear-gradient(150deg, #eff7ee, hsl(196, 90%, 31%));
+    border-radius: 12px;
+    margin: 25px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    flex-basis: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.ct .ic{
+    padding: 5px;
+}
+.ct a{
+    text-decoration: none;
+    color: #191a1a;
+}
+
+.ct a:hover{
+    
+    color:rgba(16, 92, 79, 0.484);
+}
+
+
+
+.contact-info h2, .contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-info p {
+    line-height: 1.6;
+}
+
+
+
+.contact-container {
+    background-image: linear-gradient(150deg, #eff7ee, hsl(196, 90%, 31%));
+    padding: 40px;
+    margin: 50px 0 50px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.contact-container form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin: 20px 0;
+}
+
+.contact-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-image: linear-gradient(150deg, #eff7ee, hsl(196, 90%, 31%));
+    display: flex;
+    transition: border-color 0.3s ease;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: hsl(196, 90%, 31%);
+    outline: none;
+}
+
+.contact-container button {
+    padding: 12px;
+    background-color: #2593a7;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-container button:hover {
+    background-color: #191a19;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

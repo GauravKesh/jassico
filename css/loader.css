@@ -1,0 +1,179 @@
+/* Full-page overlay styles */
+.page-loader {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(150deg, #3b3f4e, hsl(196, 90%, 31%));
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  animation: fadeOut 3s ease-in forwards;
+  -webkit-animation: fadeOut 3s ease-in forwards;
+}
+
+/* Loader image styles */
+.loader-img img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Centering the loader image */
+.loader-img:nth-child(1) {
+  transform: translate(-90%, -50%);
+  animation: FadeInImageSide1 1.5s ease-out forwards;
+  -webkit-animation: FadeInImageSide1 1.5s ease-out forwards;
+  -webkit-transform: translate(-90%, -50%);
+  -moz-transform: translate(-90%, -50%);
+  -ms-transform: translate(-90%, -50%);
+  -o-transform: translate(-90%, -50%);
+}
+
+/* Loader image styles (commented out) */
+/*
+.loader-img:nth-child(2) {
+  transform: translate(-50%, -50%);
+  animation: FadeInImageSide2 1.5s ease-out forwards;
+  -webkit-animation: FadeInImageSide2 1.5s ease-out forwards;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.loader-img:nth-child(3) {
+  transform: translate(-50%, -50%);
+  animation: FadeInImageSide3 1.5s ease-out forwards;
+  -webkit-animation: FadeInImageSide3 1.5s ease-out forwards;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.loader-img:nth-child(4) {
+  transform: translate(-50%, -50%);
+  animation: FadeInImageSide4 1.5s ease-out forwards;
+  -webkit-animation: FadeInImageSide4 1.5s ease-out forwards;
+}
+*/
+
+/* Keyframes for the fade-out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Delay to ensure the content loads completely */
+.page-loader {
+  /* animation-delay: 1s; */
+}
+
+/* Keyframes for the fade-in and fade-out animation */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+/* Keyframes for the image animation */
+@keyframes FadeInImageSide1 {
+  from {
+    opacity: 0;
+    transform: translate(90%, -100%);
+    translate-webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(90%, -100%);
+    -ms-transform: translate(90%, -100%);
+    -o-transform: translate(90%, -100%);
+    -webkit-transform: translate(90%, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes FadeInImageSide2 {
+  from {
+    opacity: 0;
+    transform: translate(50%, -100%);
+    translate-webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(50%, -100%);
+    -ms-transform: translate(50%, -100%);
+    -o-transform: translate(50%, -100%);
+    -webkit-transform: translate(50%, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes FadeInImageSide3 {
+  from {
+    opacity: 0;
+    transform: translate(70%, -100%);
+    translate-webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(70%, -100%);
+    -ms-transform: translate(70%, -100%);
+    -o-transform: translate(70%, -100%);
+    -webkit-transform: translate(70%, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes FadeInImageSide4 {
+  from {
+    opacity: 0;
+    transform: translate(100%, -100%);
+    translate-webkit-transform: translate(50%, -100%);
+    -moz-transform: translate(100%, -100%);
+    -ms-transform: translate(100%, -100%);
+    -o-transform: translate(100%, -100%);
+    -webkit-transform: translate(100%, -100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+  }
+}
